@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan</title>
+</head>
+<body>
+    <h1>FORM PEMESANAN</h1>
+
+    <form action="">
+        <table border="0" cellpadding="8" cellspacing="0">
+
+            <!--Nama pemesan (input text)-->
+            <tr>
+                <td><label for="nama">Nama lengkap:</label></td>
+                <td><input type="text" name="nama" id="nama"></td>
+            </tr>
+
+            <!--Nomor telp (input num)-->
+            <tr>
+                <td><label for="telp">Nomor telp:</label></td>
+                <td><input type="number" name="telp" id="telp" placeholder="62 ..."></td>
+            </tr>
+
+            <!--Alamat pengirim-->
+            <tr>
+                <td><label for="alamat">Alamat pemesan:</label></td>
+                <td><textarea name="alamat" id="alamat" cols="30" rows="5"></textarea></td>
+            </tr>
+
+            <!--Checkbox 4 jenis makanan-->
+            <tr>
+                <td>Makanan:</td>
+                <td>
+                    <input type="checkbox" name="makanan" value="Mie ayam">Mie ayam
+                    <input type="checkbox" name="makanan" value="Mie goreng">Mie goreng
+                    <input type="checkbox" name="makanan" value="Mie tekwan">Mie tekwa
+                    <input type="checkbox" name="makanan" value="Mie shoun">Mie shoun
+                </td>
+            </tr>
+
+            <!--Radio button 5 pilihan (ukuran pesanan)-->
+            <tr>
+                <td>Ukuran Pesanan</td>
+                <td>
+                    <input type="radio" name="ukuran" value="S">S
+                    <input type="radio" name="ukuran" value="M">M
+                    <input type="radio" name="ukuran" value="L">L
+                    <input type="radio" name="ukuran" value="XL">XL
+                    <input type="radio" name="ukuran" value="XXL">XXL
+                </td>
+            </tr>
+
+            <!--Jumlah (num)-->
+            <tr>
+                <td>Jumlah pesanan</td>
+                <td><input type="number" name="jumlah" id="jumlah"></td>
+            </tr>
+
+            <!--Metode dropdown (3 metode memasaknya)-->
+            <tr>
+                <td>Metode masak</td>
+                <td>
+                    <select>
+                        <option>Pilih metode</option>
+                        <option>Slow cook</option>
+                        <option>Well done</option>
+                        <option>Express</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!--Catatan (text area)-->
+            <tr>
+                <td>Catatan tambahan</td>
+                <td><textarea name="Pesan" id="pesan" cols="30" rows="5"></textarea></td>
+            </tr>
+
+            <!--Button kirim dan restart-->
+            <tr>
+                <td>
+                    <input type="submit" value="Kirim">
+                    <input type="reset" value="Hapus Ulang">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
